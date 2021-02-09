@@ -1,0 +1,123 @@
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.brand-name {
+    font-family: 'Unica One', cursive;
+    text-align: center;
+    font-size: 2.7rem;
+    color: white;
+}
+
+img {
+    display: inline-flex;
+    height: auto;
+}
+
+ul, li {
+    width: auto;
+}
+
+.banner {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 90px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 380px;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 99;
+    order: 2;
+}
+
+.banner li a {
+    padding: 20px 50px;
+    color: #b8ee06;
+}
+
+.image-periphery {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    width: 15%;
+}
+
+.image-central {
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+a {
+    display: inline-flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.051em;
+    line-height: 1.3;
+    outline: none;
+    color: #B5EF05;
+}
+
+@media only screen and (max-width: 992px) {
+
+    a {
+      font-size: 2.3rem;
+    }
+
+    .banner {
+        position: relative;
+        top: 0;
+        flex-direction: unset;
+        justify-content: center;
+    }
+
+    .image-central {
+        width: 80%;
+        margin: 5% auto;
+        display: block;
+    }
+
+    .image-periphery {
+        margin-left: 0 !important;
+        width: 25% !important;
+    }
+
+    .male-title, .unisex-title, .female-title {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    ul, li {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+
+    .image-central {
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+    }
+}

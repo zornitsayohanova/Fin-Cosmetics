@@ -1,0 +1,279 @@
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.brand-name {
+    text-align: center;
+}
+
+.brand-name a {
+    margin-top: 30px;
+    font-family: 'Unica One', cursive;
+    text-align: center;
+    font-size: 2.7rem;
+    color: white;
+}
+
+img {
+    display: inline-flex;
+}
+
+.image-periphery {
+    top: 0;
+    width: 15%;
+}
+
+.image-central {
+    margin-top: 5%;
+    margin-left: 29%;
+    margin-right: 29%;
+    width: 40%;
+}
+
+.left {
+    left: 0;
+    position: relative;
+    margin-right: auto;
+    order: 1;
+}
+
+.right {
+    right: 0;
+    position: relative;
+    margin-left: auto;
+    order: 2;
+}
+
+a {
+    padding-top: 20px;
+    display: inline-flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.051em;
+    line-height: 1.3;
+    outline: none;
+    color: #b4ed07;
+}
+
+.banner {
+    margin: 20% 0 0 0;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 99;
+    order: 2;
+}
+
+.banner li a {
+    display: block;
+    padding: 20px 5%;
+    text-decoration: none;
+    color: #fff8fd;
+}
+
+ul {
+    margin: 0;
+}
+
+ul, li {
+    padding-left: 0;
+    display: inline-flex;
+    width: 100%;
+    height: max-content;
+}
+
+.breadcrumb {
+    margin-top: 9%;
+    padding: 10px 15% 20px 15%;
+    width: auto;
+    list-style: none;
+    background-color: black;
+}
+
+.breadcrumb li {
+    display: inline;
+    width: auto;
+    font-size: 18px;
+}
+
+.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+}
+
+.breadcrumb li a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+}
+
+.female-title, .male-title {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    margin-top: 12%;
+    height: 50.5%;
+    width: 15%;
+    z-index: 90;
+    background-color: #e6080859;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 12%;
+    margin-top: 0;
+    padding-top: 90px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #fff8fd;
+}
+
+.info {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #fff8fd;
+}
+
+.second-menu {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.second-menu a {
+    padding: 2px 50px 30px;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.product-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.product-container a {
+    padding-top: 0;
+}
+
+.male-categories, .female-categories, .unisex-categories {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+button {
+    margin-left: 24%;
+    margin-right: 24%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    height: 50%;
+    font-family: 'Raleway', cursive;
+    font-size: 1.6rem;
+    border: 2px solid #8bb804;
+    color: #8bb804;
+    background-color: #000000;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .banner {
+        top: 0;
+        justify-content: flex-start;
+        flex-direction: column;
+        z-index: 90;
+        order: 1;
+    }
+
+    .image-periphery {
+        order: 2;
+    }
+
+    ul, li {
+        display: block;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .unisex-title, .male-title, .female-title {
+        padding-left: 0 !important;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .product-container img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    a {
+        padding-top: 12px;
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .banner {
+        margin-top: 34%;
+    }
+
+    .product-container {
+        width: 70%;
+    }
+
+    .image-periphery {
+        margin-left: -39% !important;
+        width: 39% !important;
+    }
+
+    .image-central {
+        width: 80%;
+        margin: 5% 10%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+
+    .banner {
+        margin-top: 29%;
+    }
+
+    .image-periphery {
+        margin-left: -27% !important;
+        width: 27% !important;
+    }
+
+    .product-container {
+        width: 50%;
+    }
+
+    .image-central {
+        width: 50%;
+        margin: 5% 25%;
+    }
+}
+
+

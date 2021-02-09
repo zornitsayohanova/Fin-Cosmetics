@@ -1,0 +1,55 @@
+
+.first-block {
+    display: flex;
+    justify-content: start;
+}
+
+.banner {
+    justify-content: flex-start;
+    margin-left: -27%;
+}
+
+.female-title {
+    padding-left: 50% !important;
+    width: 100%;
+    color: white;
+    background-color: #8BB804;
+}
+
+.unisex-title {
+    padding-left: 35% !important;
+}
+
+.male-title {
+    padding-left: 23% !important;
+}
+
+.female-categories {
+    padding-bottom: 6%;
+    position: relative;
+    z-index: 20;
+    background-color: #9b0303ed;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .banner {
+        top: 0;
+        margin-left: 0 !important;
+    }
+
+    .female-title {
+        margin-left: 9%;
+        padding: 10px 0;
+        width: 85%;
+    }
+
+    .unisex-title, .male-title, .female-title {
+        padding-left: 0 !important;
+    }
+
+    .male-title, .unisex-title{
+        margin-left: 9%;
+    }
+}
